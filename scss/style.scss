@@ -1,0 +1,186 @@
+
+// Definición de variables
+
+$color-fondo: #222;
+$color-texto: #fff;
+$color-primario: #333;
+$color-borde: #ddd;
+$color-hover: #ddd;
+
+// Estilos globales
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: {
+    image: url(../img/html-color-codes-color-tutorials-hero.jpg);
+    position: center center;
+    size: cover;
+    repeat: none;
+    attachment: scroll;
+  }
+  color: #333;
+}
+
+//Variables
+$color-header: #222;
+$color-texto: #fff;
+
+header {
+  background-color: $color-header;
+  color: $color-texto;
+  text-align: center;
+  padding: 20px 0;
+
+  h1 {
+    margin: 0;
+    font-size: 2.5em;
+  }
+
+  p {
+    margin: 5px 0 0;
+    font-size: 1.1em;
+  }
+}
+
+div {
+  h2 {
+    margin: 0;
+    font-size: 2.0em;
+    color: $color-texto;
+    text-align: center;
+  }
+}
+
+.texto {
+  margin: 0;
+  font-size: 1.3em;
+  color: $color-texto;
+  text-align: center;
+}
+
+/* textos*/
+.texto {
+  margin: 0;
+  font-size: 1.3em;
+  color: $color-texto;
+  text-align: center;
+}
+
+/* galeria*/
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-auto-rows: auto;
+  gap: 15px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/*Items de galería*/
+.galeria-item {
+  background-color: $color-texto;
+  border: 1px solid $color-borde;
+  overflow: hidden;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+
+  &:hover {
+    transform: scale(1.03);
+  }
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  figcaption {
+    padding: 10px;
+    text-align: center;
+    font-size: 1em;
+    background-color: #fafafa;
+  }
+}
+
+/*Footer*/
+footer {
+  background-color: $color-fondo;
+  color: $color-texto;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 20px;
+}
+
+/*Navegación*/
+nav {
+  background-color: $color-primario;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+
+  li {
+    margin: 0 15px;
+
+    a {
+      text-decoration: none;
+      color: $color-texto;
+      font-size: 1.1em;
+      transition: color 0.3s;
+
+      &:hover {
+        color: $color-hover;
+      }
+    }
+  }
+}
+
+/*Ubicación*/
+.ubicacion {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+
+  h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+
+  p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+  }
+}
+
+/*Mapa*/
+.mapa {
+  width: 100%;
+  height: 450px;
+  margin: 20px auto;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+
+  iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+}
+
+/*Botón*/
+.btn-primary {
+  padding: 10px 15px;
+  font-size: 18px;
+  border-radius: 50%;
+  text-align: center;
+  text-decoration: none;
+}

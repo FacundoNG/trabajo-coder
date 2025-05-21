@@ -1,151 +1,160 @@
-/* Estilos globales */
+@charset "UTF-8";
 body {
-    margin: 0;
-    font-family: sans-serif;
-   background-image: url(../img/html-color-codes-color-tutorials-hero.jpg);
-   background-position: center center;
-   background-size: cover;
-   background-repeat: none;
-   background-attachment: scroll;
-    color: #333;
-  }
-  
-  /* header */
-  header {
-    background-color: #222;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-  }
- div h2 {
-    margin: 0;
-    font-size: 2.0em;
-    color: #ffffff;
-    text-align: center;
-  }
-  .texto{
-    margin: 0;
-    font-size: 1.3em;
-    color: #fff;
-    text-align: center;
-  }
-  
-  header h1 {
-    margin: 0;
-    font-size: 2.5em;
-  }
-  
-  header p {
-    margin: 5px 0 0;
-    font-size: 1.1em;
-  }
-  
-  /* Galeria */
-  .galeria {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-auto-rows: auto;
-    gap: 15px;
-    padding: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  /* obras-cuadros */
-  .galeria-item {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    overflow: hidden;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    transition: transform 0.3s;
-  }
-  
-  .galeria-item:hover {
-    transform: scale(1.03);
-  }
-  
-  .galeria-item img {
-    display: block;
-    width: 100%;
-    height: auto;
-  }
-  
-  .galeria-item figcaption {
-    padding: 10px;
-    text-align: center;
-    font-size: 1.em;
-    background-color: #fafafa;
-  }
-  
-  /* footer */
-  footer {
-    background-color: #222;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    margin-top: 20px;
-  }
-  nav {
-    background-color: #333;
-  }
-  
-  .menu {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .menu li {
-    margin: 0 15px;
-  }
-  
-  .menu li a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 1.1em;
-    transition: color 0.3s;
-  }
-  
-  .menu li a:hover {
-    color: #ddd;
-    .ubicacion {
-        padding: 40px 20px;
-        max-width: 1200px;
-        margin: 0 auto;
-        text-align: center;
-      }
-      
-      .ubicacion h2 {
-        font-size: 2em;
-        margin-bottom: 10px;
-      }
-      
-      .ubicacion p {
-        margin-bottom: 20px;
-        line-height: 1.6;
-      }
-      
-      .mapa {
-        width: 100%;
-        height: 450px;
-        margin: 20px auto;
-        border: 2px solid #ccc;
-        border-radius: 8px;
-        overflow: hidden;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-      }
-      
-      .mapa iframe {
-        width: 100%;
-        height: 100%;
-        border: 0;
-      }
-      .btn-primary {
-        padding: 10px 15px;
-        font-size: 18px;
-        border-radius: 50%;
-        text-align: center;
-        text-decoration: none;}
+  margin: 0;
+  font-family: sans-serif;
+  background-image: url(../img/html-color-codes-color-tutorials-hero.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: none;
+  background-attachment: scroll;
+  color: #333;
+}
+
+header {
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+header h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+header p {
+  margin: 5px 0 0;
+  font-size: 1.1em;
+}
+
+div h2 {
+  margin: 0;
+  font-size: 2em;
+  color: #fff;
+  text-align: center;
+}
+
+.texto {
+  margin: 0;
+  font-size: 1.3em;
+  color: #fff;
+  text-align: center;
+}
+
+/* textos*/
+.texto {
+  margin: 0;
+  font-size: 1.3em;
+  color: #fff;
+  text-align: center;
+}
+
+/* galeria*/
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-auto-rows: auto;
+  gap: 15px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/*Items de galería*/
+.galeria-item {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  overflow: hidden;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+.galeria-item:hover {
+  transform: scale(1.03);
+}
+.galeria-item img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.galeria-item figcaption {
+  padding: 10px;
+  text-align: center;
+  font-size: 1em;
+  background-color: #fafafa;
+}
+
+/*Footer*/
+footer {
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 20px;
+}
+
+/*Navegación*/
+nav {
+  background-color: #333;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+.menu li {
+  margin: 0 15px;
+}
+.menu li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.1em;
+  transition: color 0.3s;
+}
+.menu li a:hover {
+  color: #ddd;
+}
+
+/*Ubicación*/
+.ubicacion {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+.ubicacion h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+.ubicacion p {
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+/*Mapa*/
+.mapa {
+  width: 100%;
+  height: 450px;
+  margin: 20px auto;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+.mapa iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/*Botón*/
+.btn-primary {
+  padding: 10px 15px;
+  font-size: 18px;
+  border-radius: 50%;
+  text-align: center;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=style.css.map */
